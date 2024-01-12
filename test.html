@@ -4,37 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .outer-div{
-            display: flex;
-            gap: 5%;
-            width: 100%;
-        }
-
-        .cols{
-            background-color: lightblue;
-            max-width: 8.33%;
-            position: relative;
-            height: 1080px;
-            display: flex;
-            align-items: stretch;
-        }
-    </style>
 </head>
 <body>
-    <div class="outer-div">
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
-        <div class="cols">column</div>
+    <div class="div">
+
     </div>
+
+    <script>
+        const divElem = document.querySelector('.div');
+
+        let paraElem = document.createElement('p');
+        paraElem.innerText = "This is a paragraph";
+
+        divElem.appendChild(paraElem);
+    </script>
 </body>
 </html>
