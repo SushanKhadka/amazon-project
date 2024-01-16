@@ -1,0 +1,124 @@
+.products-grid{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    max-width: 100%;
+}
+
+.product-div{
+    border-right: 0.2px solid rgb(200, 200, 200);
+    border-bottom: 0.2px solid #c8c8c8;
+    padding: 40px 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 2000px){
+    .products-grid{
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media (max-width: 1600px){
+    .products-grid{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 1300px){
+    .products-grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1000px){
+    .products-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 800px){
+    .products-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 575px){
+    .products-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px){
+    .products-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.img-container{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-name-container{
+    margin-top: 15px;
+}
+
+.ratings-div{
+    display: flex;
+    max-height: 10%;
+    max-width: 100%;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.stars{
+    width: 100px;
+    margin-right: 6px;
+}
+
+.count{
+    color: #017cb6;
+    cursor: pointer;
+}
+
+.price{
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.dropdown-container{
+    margin-top: 8px;
+}
+
+.dropdown{
+    padding: 3px 5px;
+    border: 0.1px solid rgb(213, 217, 217);
+    border-radius: 15%;
+    background-color: rgb(240, 240, 240);
+}
+
+.spacer{
+    flex: 1;
+}
+
+.add-to-cart-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-to-cart-btn{
+    width: 100%;
+    height: 2.5em;
+    border-radius: 50px;
+    border: 1px solid rgb(242, 194, 0);
+    background-color: rgb(247, 202, 0);
+    cursor:pointer;
+}

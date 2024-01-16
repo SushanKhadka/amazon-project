@@ -6,5 +6,5 @@
 }
 
 body{
-    padding-bottom: 1000px;
+    scroll-behavior: smooth;
 }
