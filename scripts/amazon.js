@@ -2,10 +2,13 @@ import { products } from './data.js';
 
 const productsGridElem = document.querySelector('.products-grid');
 
+let addedItemsCount = 0;
+let addedItemsCountElem = document.querySelector("#added-items-count");
+
+
 products.forEach((product, i) => {
     let productDiv = document.createElement('div');
     productDiv.classList.add('product-div');
-    productDiv.id = product.id;
 
     let displayImg = document.createElement('img');
     displayImg.classList.add('display-img');
@@ -103,11 +106,34 @@ products.forEach((product, i) => {
     let addToCartBtn = document.createElement('button');
     addToCartBtn.classList.add('add-to-cart-btn');
     addToCartBtn.innerText = "Add To Cart";
+    addToCartBtn.setAttribute("data-product-id", products[i].id);
     let addToCartBtnContainer = document.createElement('div');
     addToCartBtnContainer.classList.add('add-to-cart-btn-container');
     addToCartBtnContainer.appendChild(addToCartBtn);
 
-    
+    addToCartBtn.addEventListener("click", () => {
+        let addedProductDetails = {
+            id : addToCartBtn.dataset.productId,
+            quantity : 1
+        }
+
+        let found = false;
+
+        cart.forEach((item) => {
+            if (item.id === addedProductDetails.id) {
+                item.quantity += 1;
+                found = true;
+            }
+        });
+
+        if (!found){
+            cart.push(addedProductDetails);
+            addedItemsCount += 1;
+            addedItemsCountElem.innerHTML = addedItemsCount;
+        }
+
+        console.log(cart);
+    })
 
     productDiv.appendChild(imgContainer);
     productDiv.appendChild(productNameContainer);
