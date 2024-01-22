@@ -6,169 +6,181 @@
     <title>Checkout</title>
 
     <link rel="stylesheet" href="./styles/files/checkout.css">
+    <link rel="stylesheet" href="./styles/shared/general.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav-bar">
-        <a href="./amazon.html">
-            <div class="amazon-logo">
-                <img src="./images/amazon-logo.png" alt="" class="logo-img">
+    <nav>
+        <div class="nav-bar">
+            <a href="./amazon.html">
+                <div class="amazon-logo">
+                    <img src="./images/amazon-logo.png" alt="" class="logo-img">
+                </div>
+            </a>
+            
+            <div class="heading">
+                Checkout (<span class="total-items-count">2 items</span>)
             </div>
-        </a>
-        
-        <div class="heading">
-            Checkout (<span>2 items</span>)
-        </div>
-
-        <div class="lock-icon">
-            <img src="./images/icons/checkout-lock-icon.png" alt="" class="lock-icon-img">
+    
+            <div class="lock-icon">
+                <img src="./images/icons/checkout-lock-icon.png" alt="" class="lock-icon-img">
+            </div>
         </div>
     </nav>
 
-    <div class="main-body">
-        <div class="selected-products-container">
-            <div class="selected-product">
-                <div class="product-delivery-text">
-                    <p class="delivery-date">
-                        Delivery date: Tuesday, January 23
-                    </p>
-                </div>
-                
-                <div class="product-details">
-                    <div class="product-image-container">
-                        <img src="" alt="" class="product-image">
-                    </div>
-
-                    <div class="product-name-div">
-                        <div class="product-name">
-                            <p></p>
-                        </div>
-
-                        <div class="product-price">
-                            <p></p>
-                        </div>
-
-                        <div class="product-quantity">
-                            <div class="quantity">
-                                Quantity: 1
-                            </div>
-                            <div class="update-quantity-btn update-delete-btns">
-                                <p>Update</p>
-                            </div>
-                            <div class="delete-product-btn update-delete-btns">
-                                <p>Delete</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="delivery-options-container">
-                    <div class="delivery-options-header">
-                        <p>Choose a delivery option:</p>
-                    </div>
-                    
-                    <div class="delivery-options">
-                        <input name="available-date" type="radio" id="nine-days" class="delivery-date">
-                        <label for="nine-days">
-                            <div class="date">
-                                Wednesday, January 31
-                            </div>
-                            <div class="delivery-cost">
-                                FREE - Shipping
-                            </div>
-                        </label>
-                    </div>
-
-                    <div class="delivery-options">
-                        <input name="available-date" type="radio" id="three-days" class="delivery-date">
-                        <label for="three-days">
-                            <div class="date">
-                                Thursday, January 25
-                            </div>
-                            <div class="delivery-cost">
-                                $4.99 - Shipping
-                            </div>
-                        </label>
-                    </div>
-
-                    <div class="delivery-options">
-                        <input name="available-date" type="radio" id="one-day" class="delivery-date">
-                        <label for="one-day">
-                            <div class="date">
-                                Tuesday, January 23
-                            </div>
-                            <div class="delivery-cost">
-                                $9.99 - Shipping
-                            </div>
-                        </label>
-                    </div>
-                </div>
-            </div>
+    <div class="main-body-container">
+        <div class="page-heading">
+            <p>Review Your Order</p>
         </div>
 
-        <div class="bill-container">
-            <div class="bill-heading">
-                <p>Order Summary</p>
-            </div>
-
-            <div class="bill">
-                <div class="items-total-cost">
-                    <div class="items-count cost-name-css">
-                        <p>Items(1)</p>
+        <div class="main-body">
+            <div class="selected-products-container">
+                <div class="selected-product">
+                    <div class="product-delivery-text">
+                        <p class="delivery-date">
+                            Delivery date: Tuesday, January 23
+                        </p>
                     </div>
-                    <div class="items-added-price cost-amount-css">
+                    
+                    <div class="product-container">
+                        <div class="product-details">
+                            <div class="product-image-container">
+                                <img src="" alt="" class="product-image">
+                            </div>
+        
+                            <div class="product-name-div">
+                                <div class="product-name">
+                                    <p></p>
+                                </div>
+        
+                                <div class="product-price">
+                                    <p></p>
+                                </div>
+        
+                                <div class="product-quantity">
+                                    <div class="quantity">
+                                        Quantity: 1
+                                    </div>
+                                    <div class="update-quantity-btn update-delete-btns">
+                                        <p>Update</p>
+                                    </div>
+                                    <div class="delete-product-btn update-delete-btns">
+                                        <p>Delete</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="delivery-options-container">
+                            <div class="delivery-options-header">
+                                <p>Choose a delivery option:</p>
+                            </div>
+                            
+                            <div class="delivery-options">
+                                <input name="available-date" type="radio" id="nine-days" class="delivery-date">
+                                <label for="nine-days">
+                                    <div class="date">
+                                        Wednesday, January 31
+                                    </div>
+                                    <div class="delivery-cost">
+                                        FREE - Shipping
+                                    </div>
+                                </label>
+                            </div>
+        
+                            <div class="delivery-options">
+                                <input name="available-date" type="radio" id="three-days" class="delivery-date">
+                                <label for="three-days">
+                                    <div class="date">
+                                        Thursday, January 25
+                                    </div>
+                                    <div class="delivery-cost">
+                                        $4.99 - Shipping
+                                    </div>
+                                </label>
+                            </div>
+        
+                            <div class="delivery-options">
+                                <input name="available-date" type="radio" id="one-day" class="delivery-date">
+                                <label for="one-day">
+                                    <div class="date">
+                                        Tuesday, January 23
+                                    </div>
+                                    <div class="delivery-cost">
+                                        $9.99 - Shipping
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+    
+            <div class="bill-container">
+                <div class="bill-heading">
+                    <p>Order Summary</p>
+                </div>
+    
+                <div class="bill">
+                    <div class="items-total-cost">
+                        <div class="items-count cost-name-css">
+                            <p>Items(1)</p>
+                        </div>
+                        <div class="items-added-price cost-amount-css">
+                            <p>$10.90</p>
+                        </div>
+                    </div>
+        
+                    <div class="shipping-total-cost">
+                        <div class="cost-name-css">
+                            <p>Total before tax:</p>
+                        </div>
+                        <div class="before-tax-amount cost-amount-css">
+                            <p>$10.90</p>
+                        </div>
+                    </div>
+    
+                    <div class="total-before-tax">
+                        <div class="cost-name-css">
+                            <p>Extimated tax (10%)</p>
+                        </div>
+                        <div class="taxed-amount cost-amount-css">
+                            <p>$10.90</p>
+                        </div>
+                    </div>
+    
+                    <div class="estimated-tax">
+                        <div class="cost-name-css">
+                            <p>Items(1)</p>
+                        </div>
+                        <div class="items-added-price cost-amount-css">
+                            <p>$10.90</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="order-total-cost">
+                    <div class="order-total">
+                        <p>Order total:</p>
+                    </div>
+                    <div class="total-cost">
                         <p>$10.90</p>
                     </div>
                 </div>
     
-                <div class="shipping-total-cost">
-                    <div class="cost-name-css">
-                        <p>Total before tax:</p>
-                    </div>
-                    <div class="before-tax-amount cost-amount-css">
-                        <p>$10.90</p>
-                    </div>
+                <div class="paypal-payment-option-container">
+                    <p>Use Paypal</p>
+                    <input class="use-paypal" type="checkbox">
                 </div>
-
-                <div class="total-before-tax">
-                    <div class="cost-name-css">
-                        <p>Extimated tax (10%)</p>
-                    </div>
-                    <div class="taxed-amount cost-amount-css">
-                        <p>$10.90</p>
-                    </div>
+    
+                <div class="place-order-btn-container">
+                    <button class="place-order-btn">Place Your Order</button>
                 </div>
-
-                <div class="estimated-tax">
-                    <div class="cost-name-css">
-                        <p>Items(1)</p>
-                    </div>
-                    <div class="items-added-price cost-amount-css">
-                        <p>$10.90</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="order-total-cost">
-                <div class="order-total">
-                    <p>Order total:</p>
-                </div>
-                <div class="total-cost">
-                    <p>$10.90</p>
-                </div>
-            </div>
-
-            <div class="paypal-payment-option-container">
-                <p>Use Paypal</p>
-                <input class="use-paypal" type="checkbox">
-            </div>
-
-            <div class="place-order-btn-container">
-                <button class="place-order-btn">Place Your Order</button>
             </div>
         </div>
     </div>

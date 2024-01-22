@@ -1,0 +1,66 @@
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    align-items: center;
+}
+
+.amazon-logo img{
+    width: 100px;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.heading span{
+    color: rgb(0, 113, 133);
+}
+
+.lock-icon img{
+    width: 16px;
+}
+
+.main-body-container{
+    padding: 130px 30px 0px 30px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-heading p{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.main-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.selected-products-container{
+    flex: 2;
+    border: 0.1px solid lightgray;
+    padding: 18px;
+    border-radius: 4px;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill-container{
+    flex: 1;
+
+}
