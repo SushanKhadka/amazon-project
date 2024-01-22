@@ -1,4 +1,6 @@
-import { products } from './data.js';
+import {products} from '../data/products.js';
+import {cart} from "../data/cart.js";
+
 
 const productsGridElem = document.querySelector('.products-grid');
 
